@@ -1,16 +1,20 @@
-# my_bank
+# My Bank : the financial pocket companion 💸
 
-A new Flutter project.
+This is my app to solve my money problems. The idea is have the option to add all the things i buyed and earned to control my finances.
 
-## Getting Started
+## Actual app state 👌
 
-This project is a starting point for a Flutter application.
+By now, the app looks like this:
 
-A few resources to get you started if this is your first Flutter project:
+![My App](/images/Screenshot_20220325-013158.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### To do 🎯
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [x] Create the start screen with widgets for follow the expenses
+- [x] Make possible for the user to add new transactions
+- [ ] Transform the Chart in to a weekly separated bars, one for each week day
+- [ ] Create a persistent way to storage all the data inputed by user
+- [ ] Improve visuals:
+  - [ ] Button style and size, and size of the add-transaction section
+  - [ ] Better date formatting
+  - [ ] Transaction value formatting
