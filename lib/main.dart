@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_money_formatter/flutter_money_formatter.dart';
 import 'package:my_bank/widgets/transaction_list.dart';
 
-import 'chart.dart';
+import 'widgets/chart.dart';
 import 'widgets/user_transactions.dart';
 
 void main() {
