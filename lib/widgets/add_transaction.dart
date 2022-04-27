@@ -17,6 +17,7 @@ class AddTransaction extends StatelessWidget {
           children: [
             TextField(
               controller: titleController,
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 labelText: 'Título',
               ),

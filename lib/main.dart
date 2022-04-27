@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_money_formatter/flutter_money_formatter.dart';
-import 'package:my_bank/widgets/transaction_list.dart';
 
 import 'widgets/chart.dart';
 import 'widgets/user_transactions.dart';
@@ -27,6 +24,7 @@ class MyApp extends StatelessWidget {
 
 class MyBank extends StatelessWidget {
   final String title;
+  // Class constructor
   MyBank(this.title);
 
   @override

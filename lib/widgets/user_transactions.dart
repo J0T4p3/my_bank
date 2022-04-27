@@ -12,7 +12,10 @@ class UserTransactions extends StatefulWidget {
 class _UserTransactionsState extends State<UserTransactions> {
   final List<Transaction> _transactions = [];
   // Function to add transaction ans pass the pointer
-  void _addTransaction({String title, double price}) {
+  void _addTransaction({
+    String title,
+    double price,
+  }) {
     final tx = Transaction(
       title: title,
       price: price,
@@ -20,9 +23,11 @@ class _UserTransactionsState extends State<UserTransactions> {
     );
 
     // Change the transaction list state
-    setState(() {
-      _transactions.add(tx);
-    });
+    setState(
+      () {
+        _transactions.add(tx);
+      },
+    );
   }
 
   @override
