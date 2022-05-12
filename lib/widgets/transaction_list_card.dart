@@ -53,10 +53,10 @@ class TransactionCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            '${price}',
+                            '$price',
                           ),
                           Text(
-                            '${tDate}',
+                            '$tDate',
                             style: TextStyle(
                               color: Colors.grey,
                               fontStyle: FontStyle.italic,
