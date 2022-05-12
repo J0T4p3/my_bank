@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class TransactionCard extends StatelessWidget {
   final String title;
@@ -6,6 +7,12 @@ class TransactionCard extends StatelessWidget {
   final DateTime tDate;
 
   TransactionCard({this.title, this.price, this.tDate});
+
+  String formatDateTime(DateTime date) {
+    String formattedDate = DateFormat('dd/MM/yyyy').format(date);
+    print(formattedDate);
+    return formattedDate;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +63,7 @@ class TransactionCard extends StatelessWidget {
                             '$price',
                           ),
                           Text(
-                            '$tDate',
+                            formatDateTime(tDate),
                             style: TextStyle(
                               color: Colors.grey,
                               fontStyle: FontStyle.italic,

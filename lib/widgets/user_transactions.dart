@@ -15,11 +15,12 @@ class _UserTransactionsState extends State<UserTransactions> {
   void _addTransaction({
     String title,
     double price,
+    DateTime dTime,
   }) {
     final tx = Transaction(
       title: title,
       price: price,
-      tDate: DateTime.now(),
+      tDate: dTime,
     );
 
     // Change the transaction list state

@@ -6,6 +6,7 @@ class AddTransaction extends StatelessWidget {
   AddTransaction(this.addTransaction);
   final titleController = TextEditingController();
   final priceController = TextEditingController();
+  final dTime = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
@@ -31,11 +32,10 @@ class AddTransaction extends StatelessWidget {
             ),
             FlatButton(
               onPressed: () {
-                //dispose();
-
                 addTransaction(
                   title: titleController.text,
                   price: double.parse(priceController.text),
+                  dTime: dTime,
                 );
 
                 showDialog(
